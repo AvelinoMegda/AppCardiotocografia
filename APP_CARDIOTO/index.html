@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>panel demo</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.2.min.css">
+	<link rel="stylesheet" href="css.css">
+    <!-- Celular --><link href="css/smartphone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:320px)" />
+    <!-- Tablet --><link href="css/tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:321px) and (max-width:1024px)" />
+    <!-- Desktop --><link href="css/pc.css" rel="stylesheet" type="text/css" media="only screen and (min-width:1025px)" />   
+	<script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script> 
+    <script src="js/Funcoes.js" type="text/javascript"></script>
+    
+
+   
+    <script type="text/javascript">
+    	
+
+    
+	</script>
+    
+
+    
+
+     
+</head>
+<body >	
+    <div id="pagina" data-role="page">
+      <!-- Header -->
+      <div data-role="header" data-theme="g">
+
+
+       <!-- <div class="logo"><img src="imagens/logo.png" /></div> -->
+        <div class="logo">
+       <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Procurar..." class="ui-listview" id="seach_menu">
+    		<li><a href="javascript:BuscaTela(1);">Definição</a></li>
+   			<li><a href="javascript:BuscaTela(2);">Conceito</a></li>
+    		<li><a href="javascript:BuscaTela(3);">Sofrimento Fetal: Tipos</a></li>
+    		<li><a href="javascript:BuscaTela(4);">Polissistolia</a></li>
+            <li><a href="javascript:BuscaTela(5);">Padronizacao</a></li>
+            <li><a href="javascript:BuscaTela(6);">Parâmetros Cardiotocográficos</a></li>
+            <li><a href="javascript:BuscaTela(7);">variabilidade</a></li>
+            <li><a href="javascript:BuscaTela(8);">aceleracoes</a></li>
+            <li><a href="javascript:BuscaTela(9);">desaceleracoes</a></li>
+            <li><a href="javascript:BuscaTela(10);">Indices Cardiotocométricos</a></li>
+    		
+          
+		</ul>
+		</div>
+       <!--  -->
+        <div class="tam_fonte">
+            <div class="bt_menos"><a href="#"><img src="imagens/bt-.png" /></a></div>                
+            <div class="bt_mais"><a href="#"><img src="imagens/bt+.png" /></a></div>
+        </div>        
+      </div>
+      
+      <!-- Content -->
+      <div data-role="content" id="conteudo">     
+      </div>
+      
+      <!-- Footer -->
+      <div id="_footer" data-role="footer" data-theme="g">
+          <div class="bt_menu">
+          	<a href="#left-panel"></a>
+          </div>
+          <div class="navegacao">
+              <div id="voltar" class="bt_voltar"><a href="#"></a></div>                        
+              <div id="nr_tela" class="posicao_tela">50/100</div>                        
+              <div id="avancar" class="bt_avancar"><a href="#"></a></div>
+          </div>
+      </div>
+      
+      <!-- Panel -->
+      <div data-role="panel" id="left-panel" data-theme="a" >
+          <div class="espaco_menu">
+              <div class="espaco_andamento">
+                  <div class="barra_andamento_fundo">
+                      <div class="barra_progresso">%</div>
+                  </div>
+              </div>                        
+              <div class="bt_telas" data-rel="close"></div>                    
+          </div>
+      </div>      
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+	#tela{
+		background:#FF00FF;
+		width:960px;
+		height:540px;
+	}
+	h1{
+		
+		background-color:#FCF;
+	}
+	ul{
+		margin-left:20px;
+		margin-top:10px;
+		}
+	li{
+		margin-top:5px;}
+	
+	.responsive { 
+           max-width: 500px; 
+           width: 100%; 
+           height: auto;
+		   margin:50px auto;
+  }
+  .responsive  img{
+          max-width: 500px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 300px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+  }
+    </style>
+   <!--================================Css Vizualizador====================================-->
+ 		<link rel="stylesheet" href="css/swipebox.css">           
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/jquery.swipebox.js"></script>
+    
+	<script type="text/javascript">
+		jQuery(function($) {
+
+			$(".swipebox").swipebox();
+			
+			$(".swipebox-video").swipebox();
+
+			var swipeboxInstance = $(".swipebox-isotope:not(.isotope-hidden .swipebox-isotope)").swipebox();
+
+			var $container = $('#grid');
+			var optionFilter = $('#filter'),
+			optionFilterLinks = optionFilter.find('a');
+			optionFilterLinks.attr('href', '#');
+
+			onAnimationCompleted = function(){
+				swipeboxInstance.refresh();
+			};
+
+			optionFilterLinks.click( function(){
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ 
+					filter : '.' + selector, 
+					itemSelector : '.item',
+					layoutMode : 'fitRows',
+					animationEngine : 'best-available',
+				}, onAnimationCompleted);
+
+				optionFilterLinks.removeClass('active');
+				$(this).addClass('active');
+
+			
+				return false;
+			});
+		});
+	</script>
+</head>
+<body >	
+	<h1>Padronização</h1>
+  	<ul>
+     	<li> Identificacao de 3 bandas de registros graficos: </li> 
+     </ul><br>
+     
+     <p> - Banda cinetocográfica ou actotocográfica: padrão contratural habitual uterino.</p><br>
+     <p> - Banda cardiotocográfica: analise visual da FCF e suas oscilacoes, batimentos cardiacos por minuto, em 20 minutos </p><br>
+     <p> - Banda intermediária: dados de regulacao do aparelho (calibragem) do tipo velocidade do registro (utilizado hoje: 10mm por minuto), movimentacao fetal e avisos programados.</p> <br>
+     
+      <br><p><b>Padronização: Nomenclatura</b></p>
+      
+      <div class="wrapper_ft">
+						<div class="cols marg_right1">
+                        	<!--Primeira Foto--><figure class="pad_bot1"><a href="imagens/img_2.PNG" class="swipebox-isotope" title="Padronização: Nomenclatura">
+    						<div class="responsive">
+       							 <img src="imagens/img_2.PNG" alt=”img-responsiva” /> </a>
+  							</div> </figure>
+                        </div>
+    	</div>
+		
+      <br><p><b>Nomenclatura: Velocidade do Traçado</b></p>
+      
+         <div class="wrapper_ft">
+						<div class="cols marg_right1">
+                        	<!--Primeira Foto--><figure class="pad_bot1"><a href="imagens/img_4.PNG" class="swipebox-isotope" title="Padronização: Nomenclatura">
+    						<div class="responsive">
+       							 <img src="imagens/img_4.PNG" alt=”img-responsiva” /> </a>
+  							</div> </figure>
+                        </div>
+    	</div>
+       
+       <p><b>Nomenclatura e definição</b></p>
+       
+       <ul>
+     	<li>Contração uterina: sai de um ponto basal e atinge o ápice (zenite) da pressão uterina em milimetros de mercúrio. </li> 
+       </ul><br>
+       
+       <p>Ausculta Fetal</p>
+       
+         <div class="wrapper_ft">
+						<div class="cols marg_right1">
+                        	<!--Primeira Foto--><figure class="pad_bot1"><a href="imagens/img_5.PNG" class="swipebox-isotope" title="Ausculta Fetal">
+    						<div class="responsive">
+       							 <img src="imagens/img_5.PNG" alt=”img-responsiva” /> </a>
+  							</div> </figure>
+                        </div>
+    	</div>
+       
+       <ul>
+     	<li>Frequencia cardiaca fetal: linha de base habitual entre 110 e 160bpm (a partir da 28a semana e bem maturada apos 32a semana). Define-se a partir de um momento em que não se encontram artefatos por pelo menos 2 minutos (ausencia de aceleracoes ou desaceleracoes). </li>
+        <li>Variabilidade: linha oscilatoria, tracada entre o maximo e o minimo da variabilidade (normal entre 6 e 25bpm)</li>
+        <li>Desaceleracao: artefato importante por ser premonitor de sofrimento fetal, dependendo do tipo de desaceleracao.Denomina-se nadir o ponto mais baixo da desaceleracao.  E necessario tambem definir o tempo de da amplitude de queda. Faz-se importante tambem observar decalagem entre zenite e nadir.</li>
+        <li>Aceleracao: padrao mais relacionado a bem estar fetal Deve haver ao menos uma a cada 10 minutos e deve durar ao menos 15 segundos e possuir aumento de pelo menos 15 bpm.)</li>          
+       </ul><br>
+       
+       <p>Ausculta Fetal</p>
+       
+       <div class="wrapper_ft">
+						<div class="cols marg_right1">
+                        	<!--Primeira Foto--><figure class="pad_bot1"><a href="imagens/img_6.PNG" class="swipebox-isotope" title="Ausculta Fetal">
+    						<div class="responsive">
+       							 <img src="imagens/img_6.PNG" alt=”img-responsiva” /> </a>
+  							</div> </figure>
+                        </div>
+    	</div>
+        
+        <p>Ausculta Fetal</p>
+       
+       <div class="wrapper_ft">
+						<div class="cols marg_right1">
+                        	<!--Primeira Foto--><figure class="pad_bot1"><a href="imagens/img_7.PNG" class="swipebox-isotope" title="Ausculta Fetal">
+    						<div class="responsive">
+       							 <img src="imagens/img_7.PNG" alt=”img-responsiva” /> </a>
+  							</div> </figure>
+                        </div>
+    	</div>
+ 
+      
+</body>
+</html>

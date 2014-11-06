@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+	#tela{
+		background:#FF00FF;
+		width:960px;
+		height:540px;
+	}
+	h1{
+		
+		background-color:#FCF;
+	}
+	ul{
+		margin-left:20px;
+		margin-top:10px;
+		}
+	li{
+		margin-top:5px;}
+	
+	.responsive { 
+           max-width: 500px; 
+           width: 100%; 
+           height: auto;
+		   margin:50px auto;
+  }
+  .responsive  img{
+          max-width: 500px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 300px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+  }
+    </style>
+   <!--================================Css Vizualizador====================================-->
+ 		<link rel="stylesheet" href="css/swipebox.css">           
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/jquery.swipebox.js"></script>
+    
+	<script type="text/javascript">
+		jQuery(function($) {
+
+			$(".swipebox").swipebox();
+			
+			$(".swipebox-video").swipebox();
+
+			var swipeboxInstance = $(".swipebox-isotope:not(.isotope-hidden .swipebox-isotope)").swipebox();
+
+			var $container = $('#grid');
+			var optionFilter = $('#filter'),
+			optionFilterLinks = optionFilter.find('a');
+			optionFilterLinks.attr('href', '#');
+
+			onAnimationCompleted = function(){
+				swipeboxInstance.refresh();
+			};
+
+			optionFilterLinks.click( function(){
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ 
+					filter : '.' + selector, 
+					itemSelector : '.item',
+					layoutMode : 'fitRows',
+					animationEngine : 'best-available',
+				}, onAnimationCompleted);
+
+				optionFilterLinks.removeClass('active');
+				$(this).addClass('active');
+
+			
+				return false;
+			});
+		});
+	</script>
+</head>
+<body >	
+	<h1>Índices Cardiotocométricos</h1><br>
+   	<ul>
+     	<li> Índice cardiotocométrico: </li>        
+    </ul><br>
+    
+    <div style="margin-left:20px">
+        <p>Linha de base:  110 a 160 bpm -- 1 ponto</p>
+        <p>Variabilidade:  10 a 25 bpm -- 1 ponto</p>
+        <p>Aceleracao transitoria: 1  -- 2 pontos</p>
+        <p>Desaceleracoes: ausencia -- 1 ponto</p>
+	</div> <br>
+    
+    <div style="margin-left:20px">
+        <p>Ativo: 4-5 pontos</p>
+        <p>Hipoativo: 2-3 pontos</p>
+        <p>Inativo: 1 ponto</p>
+	</div><br>
+    
+    <div style="margin-left:20px">
+        <p>Hipoativos e Inativos exigem EVA</p>
+	</div>  
+    
+    <div class="wrapper_ft">
+						<div class="cols marg_right1">
+                        	<!--Primeira Foto--><figure class="pad_bot1"><a href="imagens/img_31.PNG" class="swipebox-isotope" title="Índice cardiotocométrico">
+    						<div class="responsive">
+       							 <img src="imagens/img_31.PNG" alt=”img-responsiva” /> </a>
+  							</div> </figure>
+                        </div>
+    </div>
+    
+    <div class="wrapper_ft">
+						<div class="cols marg_right1">
+                        	<!--Primeira Foto--><figure class="pad_bot1"><a href="imagens/img_32.PNG" class="swipebox-isotope" title="Índice cardiotocométrico">
+    						<div class="responsive">
+       							 <img src="imagens/img_32.PNG" alt=”img-responsiva” /> </a>
+  							</div> </figure>
+                        </div>
+    </div>
+
+</body>
+</html>

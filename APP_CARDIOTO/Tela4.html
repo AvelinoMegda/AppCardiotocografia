@@ -1,0 +1,116 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+	#tela{
+		background:#FF00FF;
+		width:960px;
+		height:540px;
+	}
+	h1{
+		
+		background-color:#FCF;
+	}
+	ul{
+		margin-left:20px;
+		margin-top:10px;
+		}
+	li{
+		margin-top:5px;}
+	
+	.responsive { 
+           max-width: 500px; 
+           width: 100%; 
+           height: auto;
+		   margin:50px auto;
+  }
+  .responsive  img{
+          max-width: 500px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 300px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+  }
+    </style>
+   <!--================================Css Vizualizador====================================-->
+ 		<link rel="stylesheet" href="css/swipebox.css">           
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/jquery.swipebox.js"></script>
+    
+	<script type="text/javascript">
+		jQuery(function($) {
+
+			$(".swipebox").swipebox();
+			
+			$(".swipebox-video").swipebox();
+
+			var swipeboxInstance = $(".swipebox-isotope:not(.isotope-hidden .swipebox-isotope)").swipebox();
+
+			var $container = $('#grid');
+			var optionFilter = $('#filter'),
+			optionFilterLinks = optionFilter.find('a');
+			optionFilterLinks.attr('href', '#');
+
+			onAnimationCompleted = function(){
+				swipeboxInstance.refresh();
+			};
+
+			optionFilterLinks.click( function(){
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ 
+					filter : '.' + selector, 
+					itemSelector : '.item',
+					layoutMode : 'fitRows',
+					animationEngine : 'best-available',
+				}, onAnimationCompleted);
+
+				optionFilterLinks.removeClass('active');
+				$(this).addClass('active');
+
+			
+				return false;
+			});
+		});
+	</script>
+</head>
+<body >	
+	<h1>Polissistolia</h1>
+  	
+ 
+       <ul>
+     	<li>POLISSISTOLIA: mais de 6 contracoes em 10 minutos.</li>
+        <p>OLIGOSSISTOLIA: inferior a 2 contrações em 2 minutos.</p> 
+       </ul><br>
+       
+       <p><b>Nomenclatura: Freqüência Contrações</b></p>
+       
+       <div class="wrapper_ft">
+						<div class="cols marg_right1">
+                        	<!--Primeira Foto--><figure class="pad_bot1"><a href="imagens/img_8.PNG" class="swipebox-isotope" title="Nomenclatura: Freqüência Contrações">
+    						<div class="responsive">
+       							 <img src="imagens/img_8.PNG" alt=”img-responsiva” /> </a>
+  							</div> </figure>
+                        </div>
+    	</div>
+        
+        <p><b>Nomenclatura: Padronização</b></p><br>
+        
+        <p style="color:#63F"><u>Parâmetros da Freqüência Cardíaca Fetal</u> </p><br>
+        
+        <p style="color:#F30"><u>1. Linha de Base: </u> </p><br>
+         
+        <center>
+        <p>Duração: mínima 2 minutos</p>
+        
+        <p>Intervalo: entre 110 – 160 b.p.m.</p> 
+        </center>
+        <div class="wrapper_ft">
+						<div class="cols marg_right1">
+                        	<!--Primeira Foto--><figure class="pad_bot1"><a href="imagens/img_9.PNG" class="swipebox-isotope" title="Parâmetros da Freqüência Cardíaca Fetal">
+    						<div class="responsive">
+       							 <img src="imagens/img_9.PNG" alt=”img-responsiva” /> </a>
+  							</div> </figure>
+                        </div>
+    	</div>
+</body>
+</html>

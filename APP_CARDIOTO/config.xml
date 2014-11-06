@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.example"
+    version   = "1.0.0">
+
+<name>Cardiotocografia</name>
+<icon src="imagens/icon.jpg" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="imagens/gravida.jpg" gap:platform="android" gap:density="ldpi" />
+<gap:splash src="imagens/gravida.jpg" gap:platform="android" gap:density="mdpi" />
+<gap:splash src="imagens/gravida.jpg" gap:platform="android" gap:density="hdpi" />
+<gap:splash src="imagens/gravida.jpg" gap:platform="android" gap:density="xdpi" />
+
+
+<description>
+Apicativo desenvolvido com fins universitarios para o curso de Medicina da PUC - Campinas
+</description>
+<preference name="permissions" value="none" />
+<author href="http://www.puc-campinas.edu.br/depart-desenvolvimento-educacional--dde--ead/" email="educacaoadistancia@puc-campinas.edu.br">
+DDE - Departamento de Desenvolvimento Educacional
+</author>
+
+</widget>

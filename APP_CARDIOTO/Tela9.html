@@ -1,0 +1,94 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <style type="text/css">
+	#tela{
+		background:#FF00FF;
+		width:960px;
+		height:540px;
+	}
+	h1{
+		
+		background-color:#FCF;
+	}
+	ul{
+		margin-left:20px;
+		margin-top:10px;
+		}
+	li{
+		margin-top:5px;}
+	
+	.responsive { 
+           max-width: 500px; 
+           width: 100%; 
+           height: auto;
+		   margin:50px auto;
+  }
+  .responsive  img{
+          max-width: 500px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 300px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+  }
+    </style>
+   <!--================================Css Vizualizador====================================-->
+<link href="css/accordion/accordion.css" type="text/css" rel="stylesheet">	
+        <link rel="stylesheet" href="css/swipebox.css">           
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/jquery.swipebox.js"></script>
+ 
+    <title>Accordion Simples</title>
+    <script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/direitos_reservados.js"></script>
+    <script type="text/javascript" src="js/Touch.js"></script> 
+    <script src="js/JS_Accordion.js" type="text/javascript"></script>
+    <script type="text/javascript">	
+		var vet_itens = new Array();	
+		
+		vet_itens[0] = "<p style='color:#F30'>Desaceleração DIP I</p><br><center><p>Correlação com a contração</p></center><img src='imagens/img_17.PNG' alt='img-responsiva' class='responsive'/><p style='color:#F30'>Desacelerações Periódicas:</p><br><center> <p>Desacelerações Precoces</p></center><img src='imagens/img_18.PNG' alt='img-responsiva' class='responsive'/> </p>";
+		vet_itens[1] = "<p style='color:#F30'>Tardia ou DIP II: </p><br><div style='margin-left:20px'><p> - hipoxemia ate que se prove o contrario. Insuficiencia utero- placentaria.</p></div><img src='imagens/img_19.PNG' alt=”img-responsiva” class='responsive'/><p><b>Nomenclatura: Desacelerações </b> </p><br><p style='color:#F30'>Desacelerações Tardias:Fisiopatologia </p><img src='imagens/img_20.PNG' alt='img-responsiva' class='responsive'/><img src='imagens/img_21.PNG' alt=”img-responsiva” class='responsive'/> <p style='color:#F30'>Desacelerações Periódicas:</p><br><center> <p>Desacelerações Tardias </p></center><img src='imagens/img_22.PNG' alt=”img-responsiva” class='responsive'/>";
+		vet_itens[2] = "<p><b>Parâmetros Cardiotocográficos </b> </p><br>Variavel ou DIP III<br><div style='='margin-left:20px'><p>Diminuição do líquido amniótico ou compressão extrinseca do cordão umbilical</p><p> - leve: queda < 15 bpm </p><p> - moderadas: 15-45bpm </p><p> - acentuadas:> 45bpm </p></div> <img src='imagens/img_23.PNG' alt='img-responsiva' class='responsive'/><p><b>Nomenclatura: Desacelerações Variáveis</b></p><img src='imagens/img_24.PNG' alt='img-responsiva' class='responsive'/><img src='imagens/img_25.PNG' alt='img-responsiva' class='responsive'/><img src='imagens/img_26.PNG' alt='img-responsiva' class='responsive'/><br><div style='margin-left:20px'><p> - Amplitudes moderadas/graves podem levar a crer em hipoxemia. </p> <br><p> - Diferenca para DIP II:  NADIR < 30 SEGUNDOS EM RELACAO A LINHA DE BASE. </p></div><br><p>Leves: nadir > 80 bpm </p><br><p>Moderadas:  nadir < 70 bpm + duracao ate 60 segundos ou</p><p>nadir >70 bpm + duracao > 60 segundos </p><br><p>Acentuadas ou graves: nadir < 70bpm + duracao > 60 segundos </p><br><p><b>Desaceleração variável</b></p><img src='imagens/img_27.PNG' alt='img-responsiva' class='responsive'/> <img src='imagens/img_28.PNG' alt='img-responsiva' class='responsive'/> ";
+		vet_itens[3] = "<p><b>Nomenclatura: Desacelerações</b> </p> <br><p style='color:#F30'>Desacelerações <u>não</u> Periódicas:</p><br><p>Espicas ou DIP O </p> <br><div style='margin-left:20px'><p> Causas: sem significado clínico</p> <br><p>quedas rápidas sem amplitude</p></div><br><p><u>Desacelerações Prolongadas</u></p><br><div style='margin-left:20px'><p>Causas:Hipotensão arterial</p><br><p>Hipertonia uterina</p></div><br><div style='margin-left:20px'><p> Queda e retorno à LB da FCF</p><br></div><br><div style='margin-left:20px'><p> Amplitude: de Queda > 15 BPM</p><br><p> Duração: > 2 min - < 10 min</p></div><br><div style='margin-left:20px'><p> Duração > 10 min.: mudança do nível basal da FCF</p> <br></div><br><p><b>Nomenclatura: Desacelerações Prolongados</b> </p><img src='imagens/img_29.PNG' alt='img-responsiva' class='responsive'/><p><b>Nomenclatura: Espicas</b></p><img src='imagens/img_30.PNG' alt='img-responsiva' class='responsive'/>";
+		
+		var itens = vet_itens.length;
+    </script>
+    
+	
+</head>
+<body >	
+
+     	<h1>4. Desacelerações:</h1><br>
+       
+        
+        <p>Periodicas:</p><br>
+        
+        <div style="margin-left:20px">
+          <p> - Precoce ou DIP I: Zenite e Nadir sao coincidentes.compressão do pólo cefálico, no final do trabalho de parto. Costuma ser fisiologica. 
+     Anteparto= oligoâmnio</p>  
+		 
+         </div>
+  	
+    						<div class="responsive">
+       							 <img src="imagens/img_15.PNG" alt=”img-responsiva” /> </a>
+  							</div> 
+            
+        <p><b>Desacelerações Precoces: Fisiopatologia </b> </p>
+        
+    						<div class="responsive">
+       							 <img src="imagens/img_16.PNG" alt=”img-responsiva” /> </a>
+  							</div> 
+        
+        <p><b>Nomenclatura: Desacelerações </b> </p><br>  
+        
+         <div class="accordion">
+        
+        </div>
+        
+       
+        
+        
+        
+</body>
+
+</html>

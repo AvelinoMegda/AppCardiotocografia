@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+     <style type="text/css">
+	#tela{
+		background:#FF00FF;
+		width:960px;
+		height:540px;
+	}
+	h1{
+		
+		background-color:#FCF;
+	}
+	ul{
+		margin-left:20px;
+		margin-top:10px;
+		}
+	li{
+		margin-top:5px;}
+	
+	.responsive { 
+           max-width: 500px; 
+           width: 100%; 
+           height: auto;
+		   margin:50px auto;
+  }
+  .responsive  img{
+          max-width: 500px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 300px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+  }
+    </style>
+   <!--================================Css Vizualizador====================================-->
+ 		<link rel="stylesheet" href="css/swipebox.css">           
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/jquery.swipebox.js"></script>
+    
+	<script type="text/javascript">
+		jQuery(function($) {
+
+			$(".swipebox").swipebox();
+			
+			$(".swipebox-video").swipebox();
+
+			var swipeboxInstance = $(".swipebox-isotope:not(.isotope-hidden .swipebox-isotope)").swipebox();
+
+			var $container = $('#grid');
+			var optionFilter = $('#filter'),
+			optionFilterLinks = optionFilter.find('a');
+			optionFilterLinks.attr('href', '#');
+
+			onAnimationCompleted = function(){
+				swipeboxInstance.refresh();
+			};
+
+			optionFilterLinks.click( function(){
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ 
+					filter : '.' + selector, 
+					itemSelector : '.item',
+					layoutMode : 'fitRows',
+					animationEngine : 'best-available',
+				}, onAnimationCompleted);
+
+				optionFilterLinks.removeClass('active');
+				$(this).addClass('active');
+
+			
+				return false;
+			});
+		});
+	</script>
+</head>
+<body >	
+	
+        <h1> 3. Acelerações transitórias</h1><br>
+    
+        <p>Definição:  aumento abrupto da frequência cardíaca fetal. Indica boa vitalidade fetal</p><br>
+        
+        <div style="margin-left:20px">
+          <p> - IG > 32 semanas:>=15bpm/>=15 segundos</p>
+          <p> - G < 32 semanas:>=10bpm/>=10 segundos</p>    
+		</div><br>
+        
+        <p>Associados os movimentos corporeos fetais</p><br>
+        
+        <p>Observação: na ausência de acelerações deve-se pensar em falso positivo e deve-se prolongar o registro ou estimular o feto.</p><br>
+        
+        <p style="color:#F30">Acelerações:</p><br>
+        
+        <center> <p>Acelerações Transitórias de boa amplitude</p></center>
+        
+        <div class="wrapper_ft">
+						<div class="cols marg_right1">
+                        	<!--Primeira Foto--><figure class="pad_bot1"><a href="imagens/img_14.PNG" class="swipebox-isotope" title="Acelerações Transitórias de boa amplitude">
+    						<div class="responsive">
+       							 <img src="imagens/img_14.PNG" alt=”img-responsiva” /> </a>
+  							</div> </figure>
+                        </div>
+    	</div>
+        
+       
+</body>
+</html>

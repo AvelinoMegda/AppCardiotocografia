@@ -1,0 +1,161 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+	#tela{
+		background:#FF00FF;
+		width:960px;
+		height:540px;
+	}
+	h1{
+		
+		background-color:#FCF;
+	}
+	ul{
+		margin-left:20px;
+		margin-top:10px;
+		}
+	li{
+		margin-top:5px;}
+	
+	.responsive { 
+           max-width: 500px; 
+           width: 100%; 
+           height: auto;
+		   margin:50px auto;
+  }
+  .responsive  img{
+          max-width: 500px;   /* Máximo da largura da imagem */
+          width: 100%;
+          max-height: 300px;  /* Máximo da altura da imagem */
+          min-height: auto;      /* Mínimo da altura, por padrão “auto” */
+  }
+    </style>
+   <!--================================Css Vizualizador====================================-->
+ 		<link rel="stylesheet" href="css/swipebox.css">           
+		<script src="js/jquery-2.0.3.min.js"></script>
+		<script src="js/jquery.swipebox.js"></script>
+    
+	<script type="text/javascript">
+		jQuery(function($) {
+
+			$(".swipebox").swipebox();
+			
+			$(".swipebox-video").swipebox();
+
+			var swipeboxInstance = $(".swipebox-isotope:not(.isotope-hidden .swipebox-isotope)").swipebox();
+
+			var $container = $('#grid');
+			var optionFilter = $('#filter'),
+			optionFilterLinks = optionFilter.find('a');
+			optionFilterLinks.attr('href', '#');
+
+			onAnimationCompleted = function(){
+				swipeboxInstance.refresh();
+			};
+
+			optionFilterLinks.click( function(){
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ 
+					filter : '.' + selector, 
+					itemSelector : '.item',
+					layoutMode : 'fitRows',
+					animationEngine : 'best-available',
+				}, onAnimationCompleted);
+
+				optionFilterLinks.removeClass('active');
+				$(this).addClass('active');
+
+			
+				return false;
+			});
+		});
+	</script>
+</head>
+<body >	
+	<h1>Sofrimento Fetal</h1><br>
+    <p><b>Tipos</b></p>
+  	<div class="wrapper_ft">
+						<div class="cols marg_right1">
+                        	<!--Primeira Foto--><figure class="pad_bot1"><a href="imagens/img_1.PNG" class="swipebox-isotope" title="Sofrimento Fetal">
+    						<div class="responsive">
+       							 <img src="imagens/img_1.PNG" alt=”img-responsiva” /> </a>
+  							</div> </figure>
+                        </div>
+    </div>
+    
+     <p><b>Critérios</b></p> <br>
+     <ul>
+     	<li>Pode ser utilizado tanto intraparto como anteparto. Nesta ultima, somenta quando ha condicões que possam comprometer a vitalidade fetal (vide indicacoes gestacionais, fetais e placentarias)</li>
+        <li>Para pacientes de baixo risco: diminuicao da movimentacao fetal, pos datismo, amniorrexe prematura, prematuridade</li>
+     </ul><br>
+     <p>  - Realizar somente a partir de 28 semanas (cuidado nas interpretacoes da CTG quando realizada precocemente, ja que o sistema nervoso autonomo do feto pode não estar completamente maturado)  </p>
+     
+     <ul>
+     	<li> Periodicidade: </li> 
+     </ul><br>
+     <p> - ate 34 semanas = semanal </p>
+     <p> - apos 34 semanas= 3/3 dias </p>
+     <p> - individualizada em situacoes especiais (comprometimento fetal extremo) </p>
+     
+     <ul>
+     	<li> A CTG deve ser seletiva ou seja, para as pacientes que não possuem indicações listadas anteriormente deve haver maior cautela em sua utilização, ja que pode causar desconforto, produzir ansiedade, reduzir mobilidade, aumenta os riscos medico- legais, limita a atuação do médico e devido ao grande número de falsos positivos, pode aumentar as taxas de parto cesariana.
+		</li>
+     </ul>
+     
+     <br><p><b>Indicações</b></p> <br>
+     
+      <ul>
+     	<li>Partem da premissa de situacoes que possam elevar as pacientes ao estado de insuficiencia placentaria.</li> 
+     </ul><br>
+     
+     <p> - doencas vasculares (HAC, DM, Cardiopatia) </p>
+     <p> - anemias graves </p>
+     <p> - hemoglobinopatia</p>
+     <p> - hipertireoidismo</p>
+     <p> - colagenose</p>
+     <p> - nefropatia</p>
+     <p> - pneumopatia</p>
+     
+     <br><p><b>Indicações Fetais</b></p> <br>
+     
+     <ul>
+     	<li>Situacoes em que não ha doenca de base materna, contudo situacoes fetais em que o risco de insuficiencia placentaria pode ocorrer:</li> 
+     </ul><br>
+     
+     <p> - gestacao prolongada</p>
+     <p> - gravidez multipla </p>
+     <p> - CIUR</p>
+     <p> - TPP</p>
+     <p> - gravidez prolongada</p>
+     <p> - apresentacao pelvica</p>
+     <p> - aloimunizacao Rh</p>
+     <p> - natimorto previo</p>
+     <p> - reducao da movimentacao fetal</p>
+     
+     <br><p><b>Indicações Gestacionais</b></p> <br>
+     
+     <ul>
+     	<li>Mãe e feto não possuem doenças ou condições que possam levar a insuficiência placentária, contudo, a presença de partos ou trabalho de parto distócicos podem ter como consequencia disso o comprometimento da vitalidade fetal. Nessas situações a utilizacão da CTG se faz de extrema importância.</li> 
+     </ul><br>
+     
+     <br><p><b>Indicações Mínimas</b></p> <br>
+      
+      <ul>
+     	<li>Deve-se obedecer tais condicoes para minimizar as situações falso- positivas</li> 
+     </ul><br> 
+     
+     <p> - Dieta: realizar apos 30 a 60 minutos da refeicao</p>
+     <p> - Evitar cigarros 2 horas antes do exame. </p>
+     <p> - Decúbito: sentada ou DLE (para descomprimir o complexo aorto-cava)</p>
+     <p> - Evitar decubito dorsal horizontal por hipotensão supina</p>
+     <p> - Indicar a idade gestacional</p>
+     <p> - Motivacao para realizacao (não fazer o exame sem indicacao!)</p>
+     <p> - Considerar  o uso de medicacoes utilizadas</p>
+     <p> - Aguardar 10 minutos de repouso</p>
+     <p> - Utilizar indice cardiotocometrico para laudo</p>
+     <p> - Padronização do tempo do exame e do estimulo vibro acustico (EVA)</p>                
+		
+</body>
+</html>

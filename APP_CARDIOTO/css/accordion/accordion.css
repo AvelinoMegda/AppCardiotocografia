@@ -1,0 +1,44 @@
+
+
+body{
+	backface-visibility:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.accordion li {margin-top: 0px; } 
+.accordion{
+	width:100%; /*Tamanho do Accordion*/
+	border:1px solid #ccc;
+	border-bottom:none;
+}
+
+.accordion ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	background:#FFFFFF;
+}
+
+.accordion ul li{
+	border-bottom:1px solid #CCC;
+}
+
+.accordion ul li > span{
+	display:block;
+	padding:3px 3px 3px 10px;
+	color:blue;
+	font-weight:bold;
+	text-transform:uppercase;
+	background:url(../../imagens/px_accordion.png) repeat-x; 
+	font-size:16px;
+	cursor:pointer;
+}
+
+.accordion ul li > span:hover{
+	background:#666666;
+	color:#FFFFFF;
+}
+
+.accordion ul li div{
+	padding:10px;
+	display:none;
+}
