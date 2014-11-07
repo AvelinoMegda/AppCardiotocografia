@@ -1,23 +1,51 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns = "http://www.w3.org/ns/widgets"
-    xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.phonegap.example"
-    version   = "1.0.0">
-
-<name>Cardiotocografia</name>
-<icon src="imagens/icon.jpg" gap:platform="android" gap:density="ldpi" />
-<gap:splash src="imagens/gravida.jpg" gap:platform="android" gap:density="ldpi" />
-<gap:splash src="imagens/gravida.jpg" gap:platform="android" gap:density="mdpi" />
-<gap:splash src="imagens/gravida.jpg" gap:platform="android" gap:density="hdpi" />
-<gap:splash src="imagens/gravida.jpg" gap:platform="android" gap:density="xdpi" />
-
-
-<description>
-Apicativo desenvolvido com fins universitarios para o curso de Medicina da PUC - Campinas
-</description>
-<preference name="permissions" value="none" />
-<author href="http://www.puc-campinas.edu.br/depart-desenvolvimento-educacional--dde--ead/" email="educacaoadistancia@puc-campinas.edu.br">
-DDE - Departamento de Desenvolvimento Educacional
-</author>
-
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="PUCC" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Cardiotocografia</name>
+    <description>
+        Apicativo desenvolvido com fins universitarios para o curso de Medicina da PUC - Campinas
+    </description>
+    <author email="ensinoadistancia@puc-campinas.edu.br" href="http://puc-campinas.edu.br">
+        PUC - Campinas
+    </author>
+    <feature name="http://api.phonegap.com/1.0/device" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="7" />
+    <preference name="android-installLocation" value="auto" />
+    <icon src="imagens/icon.jpg" />
+    <icon gap:density="ldpi" gap:platform="android" src="imagens/gravida.jpg" />
+    <icon gap:density="mdpi" gap:platform="android" src="imagens/gravida.jpg" />
+    <icon gap:density="hdpi" gap:platform="android" src="imagens/gravida.jpg" />
+    <icon gap:density="xhdpi" gap:platform="android" src="imagens/gravida.jpg" />
+    <icon gap:platform="blackberry" src="imagens/gravida.jpg" />
+    <icon gap:platform="blackberry" gap:state="hover" src="imagens/gravida.jpg" />
+    <icon gap:platform="ios" height="57" src="imagens/gravida.jpg" width="57" />
+    <icon gap:platform="ios" height="72" src="imagens/gravida.jpg" width="72" />
+    <icon gap:platform="ios" height="114" src="imagens/gravida.jpg" width="114" />
+    <icon gap:platform="ios" height="144" src="imagens/gravida.jpg" width="144" />
+    <icon gap:platform="webos" src="imagens/gravida.jpg" />
+    <icon gap:platform="winphone" src="imagens/gravida.jpg" />
+    <icon gap:platform="winphone" gap:role="background" src="imagens/gravida.jpg" />
+    <gap:splash gap:density="ldpi" gap:platform="android" src="imagens/gravida.jpg" />
+    <gap:splash gap:density="mdpi" gap:platform="android" src="imagens/gravida.jpg" />
+    <gap:splash gap:density="hdpi" gap:platform="android" src="imagens/gravida.jpg" />
+    <gap:splash gap:density="xhdpi" gap:platform="android" src="imagens/gravida.jpg" />
+    <gap:splash gap:platform="blackberry" src="imagens/gravida.jpg" />
+    <gap:splash gap:platform="ios" height="480" src="imagens/gravida.jpg" width="320" />
+    <gap:splash gap:platform="ios" height="960" src="imagens/gravida.jpg" width="640" />
+    <gap:splash gap:platform="ios" height="1024" src="imagens/gravida.jpg" width="768" />
+    <gap:splash gap:platform="ios" height="768" src="imagens/gravida.jpg" width="1024" />
+    <gap:splash gap:platform="winphone" src="imagens/gravida.jpg" />
+    <access origin="http://127.0.0.1*" />
 </widget>
