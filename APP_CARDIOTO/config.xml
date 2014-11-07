@@ -37,10 +37,10 @@
     <icon gap:platform="webos" src="imagens/icon.jpg" />
     <icon gap:platform="winphone" src="imagens/icon.jpg" />
     <icon gap:platform="winphone" gap:role="background" src="imagens/icon.jpg" />
-    <gap:splash gap:density="ldpi" gap:platform="android" src="imagens/icon.jpg" />
-    <gap:splash gap:density="mdpi" gap:platform="android" src="imagens/icon.jpg" />
-    <gap:splash gap:density="hdpi" gap:platform="android" src="imagens/gravida.png" />
-    <gap:splash gap:density="xhdpi" gap:platform="android" src="imagens/gravida.png" />
+    <gap:splash gap:density="ldpi" gap:platform="android" src="imagens/gravida.png" />
+    <gap:splash gap:density="mdpi" gap:platform="android" src="imagens/gravida.png" />
+    <gap:splash gap:density="hdpi" gap:platform="android" src="imagens/icon.jpg" />
+    <gap:splash gap:density="xhdpi" gap:platform="android" src="imagens/icon.jpg" />
     <gap:splash gap:platform="blackberry" src="imagens/icon.jpg" />
     <gap:splash gap:platform="ios" height="480" src="imagens/icon.jpg" width="320" />
     <gap:splash gap:platform="ios" height="960" src="imagens/gravida.png" width="640" />
