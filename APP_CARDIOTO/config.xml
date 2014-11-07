@@ -23,7 +23,7 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-    <icon src="imagens/icon.jpg" />
+    <icon src="imagens/icon.jpg" gap:platform="android"/>
     <icon gap:density="ldpi" gap:platform="android" src="imagens/gravida.jpg" />
     <icon gap:density="mdpi" gap:platform="android" src="imagens/gravida.jpg" />
     <icon gap:density="hdpi" gap:platform="android" src="imagens/gravida.jpg" />
