@@ -34,8 +34,8 @@
     <icon gap:platform="ios" height="72" src="imagens/gravida.jpg" width="72" />
     <icon gap:platform="ios" height="114" src="imagens/gravida.jpg" width="114" />
     <icon gap:platform="ios" height="144" src="imagens/gravida.jpg" width="144" />
-    <icon gap:platform="webos" src="imagens/gravida.jpg" />
-    <icon gap:platform="winphone" src="imagens/gravida.jpg" />
+    <icon gap:platform="webos" src="imagens/icon.jpg" />
+    <icon gap:platform="winphone" src="imagens/icon.jpg" />
     <icon gap:platform="winphone" gap:role="background" src="imagens/gravida.jpg" />
     <gap:splash gap:density="ldpi" gap:platform="android" src="imagens/gravida.jpg" />
     <gap:splash gap:density="mdpi" gap:platform="android" src="imagens/gravida.jpg" />
